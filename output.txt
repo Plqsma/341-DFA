@@ -1,0 +1,351 @@
+Test Case 1: njit@njit.gov
+Processing string: njit@njit.gov
+Present State: q0, Current input symbol: n, Next State: q1
+Present State: q1, Current input symbol: j, Next State: q1
+Present State: q1, Current input symbol: i, Next State: q1
+Present State: q1, Current input symbol: t, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: n, Next State: q3
+Present State: q3, Current input symbol: j, Next State: q3
+Present State: q3, Current input symbol: i, Next State: q3
+Present State: q3, Current input symbol: t, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+String w='njit@njit.gov' is accepted by the given DFA.
+
+Test Case 2: b@d.gov
+Processing string: b@d.gov
+Present State: q0, Current input symbol: b, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: d, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+String w='b@d.gov' is accepted by the given DFA.
+
+Test Case 3: tuv@wxyz.gr
+Processing string: tuv@wxyz.gr
+Present State: q0, Current input symbol: t, Next State: q1
+Present State: q1, Current input symbol: u, Next State: q1
+Present State: q1, Current input symbol: v, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: w, Next State: q3
+Present State: q3, Current input symbol: x, Next State: q3
+Present State: q3, Current input symbol: y, Next State: q3
+Present State: q3, Current input symbol: z, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: r, Next State: q7
+String w='tuv@wxyz.gr' is accepted by the given DFA.
+
+Test Case 4: opqr@.gov
+Processing string: opqr@.gov
+Present State: q0, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: p, Next State: q1
+Present State: q1, Current input symbol: q, Next State: q1
+Present State: q1, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: ., Next State: qtrap
+String w='opqr@.gov' is not acceptable because it reached a trap state when being parsed.
+
+Test Case 5: web.rstuv.b.gov.cdef@z.gr.go.stanford.gov
+Processing string: web.rstuv.b.gov.cdef@z.gr.go.stanford.gov
+Present State: q0, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: b, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: s, Next State: q1
+Present State: q1, Current input symbol: t, Next State: q1
+Present State: q1, Current input symbol: u, Next State: q1
+Present State: q1, Current input symbol: v, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: b, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: v, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: c, Next State: q1
+Present State: q1, Current input symbol: d, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: f, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: z, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: r, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: s, Next State: q3
+Present State: q3, Current input symbol: t, Next State: q3
+Present State: q3, Current input symbol: a, Next State: q3
+Present State: q3, Current input symbol: n, Next State: q3
+Present State: q3, Current input symbol: f, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: r, Next State: q3
+Present State: q3, Current input symbol: d, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+String w='web.rstuv.b.gov.cdef@z.gr.go.stanford.gov' is accepted by the given DFA.
+
+Test Case 6: gg@ggg.gov..gov
+Processing string: gg@ggg.gov..gov
+Present State: q0, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: ., Next State: qtrap
+String w='gg@ggg.gov..gov' is not acceptable because it reached a trap state when being parsed.
+
+Test Case 7: zyxw.@phone.gov
+Processing string: zyxw.@phone.gov
+Present State: q0, Current input symbol: z, Next State: q1
+Present State: q1, Current input symbol: y, Next State: q1
+Present State: q1, Current input symbol: x, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: @, Next State: qtrap
+String w='zyxw.@phone.gov' is not acceptable because it reached a trap state when being parsed.
+
+Test Case 8: gov@govern.gov.
+Processing string: gov@govern.gov.
+Present State: q0, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: v, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: v, Next State: q3
+Present State: q3, Current input symbol: e, Next State: q3
+Present State: q3, Current input symbol: r, Next State: q3
+Present State: q3, Current input symbol: n, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+String w='gov@govern.gov.' is not acceptable because the string did not end in a final state when being parsed.
+
+Test Case 9: yellow@abc.gov.green
+Processing string: yellow@abc.gov.green
+Present State: q0, Current input symbol: y, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: l, Next State: q1
+Present State: q1, Current input symbol: l, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: a, Next State: q3
+Present State: q3, Current input symbol: b, Next State: q3
+Present State: q3, Current input symbol: c, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: r, Next State: q7
+Present State: q7, Current input symbol: e, Next State: q3
+Present State: q3, Current input symbol: e, Next State: q3
+Present State: q3, Current input symbol: n, Next State: q3
+String w='yellow@abc.gov.green' is not acceptable because the string did not end in a final state when being parsed.
+
+Test Case 10: random@gov
+Processing string: random@gov
+Present State: q0, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: a, Next State: q1
+Present State: q1, Current input symbol: n, Next State: q1
+Present State: q1, Current input symbol: d, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: m, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: v, Next State: q3
+String w='random@gov' is not acceptable because the string did not end in a final state when being parsed.
+
+Test Case 11: rewq@g.gov.gr.gor
+Processing string: rewq@g.gov.gr.gor
+Present State: q0, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: q, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: r, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: r, Next State: q3
+String w='rewq@g.gov.gr.gor' is not acceptable because the string did not end in a final state when being parsed.
+
+Test Case 12: www@gov.govr
+Processing string: www@gov.govr
+Present State: q0, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: v, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: r, Next State: q3
+String w='www@gov.govr' is not acceptable because the string did not end in a final state when being parsed.
+
+Test Case 13: wwwc@gov.gr
+Processing string: wwwc@gov.gr
+Present State: q0, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: c, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: v, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: r, Next State: q7
+String w='wwwc@gov.gr' is accepted by the given DFA.
+
+Test Case 14: .five@six.gov
+Processing string: .five@six.gov
+Present State: q0, Current input symbol: ., Next State: qtrap
+String w='.five@six.gov' is not acceptable because it reached a trap state when being parsed.
+
+Test Case 15: governess@go.gov@
+Processing string: governess@go.gov@
+Present State: q0, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: v, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: n, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: s, Next State: q1
+Present State: q1, Current input symbol: s, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: @, Next State: qtrap
+String w='governess@go.gov@' is not acceptable because it reached a trap state when being parsed.
+
+Test Case 16: govern@government.gr.govt
+Processing string: govern@government.gr.govt
+Present State: q0, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: v, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: n, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: v, Next State: q3
+Present State: q3, Current input symbol: e, Next State: q3
+Present State: q3, Current input symbol: r, Next State: q3
+Present State: q3, Current input symbol: n, Next State: q3
+Present State: q3, Current input symbol: m, Next State: q3
+Present State: q3, Current input symbol: e, Next State: q3
+Present State: q3, Current input symbol: n, Next State: q3
+Present State: q3, Current input symbol: t, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: r, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: t, Next State: q3
+String w='govern@government.gr.govt' is not acceptable because the string did not end in a final state when being parsed.
+
+Test Case 17: govern@government.gov.gr
+Processing string: govern@government.gov.gr
+Present State: q0, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: v, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: n, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: g, Next State: q3
+Present State: q3, Current input symbol: o, Next State: q3
+Present State: q3, Current input symbol: v, Next State: q3
+Present State: q3, Current input symbol: e, Next State: q3
+Present State: q3, Current input symbol: r, Next State: q3
+Present State: q3, Current input symbol: n, Next State: q3
+Present State: q3, Current input symbol: m, Next State: q3
+Present State: q3, Current input symbol: e, Next State: q3
+Present State: q3, Current input symbol: n, Next State: q3
+Present State: q3, Current input symbol: t, Next State: q3
+Present State: q3, Current input symbol: ., Next State: q4
+Present State: q4, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: o, Next State: q6
+Present State: q6, Current input symbol: v, Next State: q7
+Present State: q7, Current input symbol: ., Next State: q8
+Present State: q8, Current input symbol: g, Next State: q5
+Present State: q5, Current input symbol: r, Next State: q7
+String w='govern@government.gov.gr' is accepted by the given DFA.
+
+Test Case 18: @mnop.gov
+Processing string: @mnop.gov
+Present State: q0, Current input symbol: @, Next State: qtrap
+String w='@mnop.gov' is not acceptable because it reached a trap state when being parsed.
+
+Test Case 19: xyzz.bcde.grow@.gov
+Processing string: xyzz.bcde.grow@.gov
+Present State: q0, Current input symbol: x, Next State: q1
+Present State: q1, Current input symbol: y, Next State: q1
+Present State: q1, Current input symbol: z, Next State: q1
+Present State: q1, Current input symbol: z, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: b, Next State: q1
+Present State: q1, Current input symbol: c, Next State: q1
+Present State: q1, Current input symbol: d, Next State: q1
+Present State: q1, Current input symbol: e, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: g, Next State: q1
+Present State: q1, Current input symbol: r, Next State: q1
+Present State: q1, Current input symbol: o, Next State: q1
+Present State: q1, Current input symbol: w, Next State: q1
+Present State: q1, Current input symbol: @, Next State: q2
+Present State: q2, Current input symbol: ., Next State: qtrap
+String w='xyzz.bcde.grow@.gov' is not acceptable because it reached a trap state when being parsed.
+
+Test Case 20: abcd..efg@fort.gov
+Processing string: abcd..efg@fort.gov
+Present State: q0, Current input symbol: a, Next State: q1
+Present State: q1, Current input symbol: b, Next State: q1
+Present State: q1, Current input symbol: c, Next State: q1
+Present State: q1, Current input symbol: d, Next State: q1
+Present State: q1, Current input symbol: ., Next State: q0
+Present State: q0, Current input symbol: ., Next State: qtrap
+String w='abcd..efg@fort.gov' is not acceptable because it reached a trap state when being parsed.
+
